@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script type="text/javascript" src="Class.js"></script>
+		<script type="text/javascript" src="game.js"></script>
+		
+		<script type="text/javascript">
+			function initGame(){
+				setup(document.getElementById("canvas"));
+				var audio = document.getElementById("audio");
+				//audio.play();
+			}
+		</script>
+		
+	</head>
+	
+	<body onload="initGame()">
+		<canvas id="canvas" width="1320" height="620" style="border: black 1px solid;"></canvas>
+		
+		<audio id="audio" src="sounds/background.mp3" loop autoplay/>
+		<audio id="jump" src="sounds/smw_jump.wav"  />
+		<audio id="message" src="sounds/smw_message_block.wav" />
+		<audio id="gameOver" src="sounds/smw_lost_a_life.wav" />
+	</body>
+</html>
